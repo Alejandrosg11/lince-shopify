@@ -11,8 +11,8 @@ import {
   isRouteErrorResponse,
 } from '@remix-run/react';
 import favicon from '~/assets/favicon.svg';
-import resetStyles from '~/styles/reset.css?url';
-import appStyles from '~/styles/app.css?url';
+import resetStyles from '~/styles/reset.scss?url';
+import appStyles from '~/styles/app.scss?url';
 import {PageLayout} from '~/components/PageLayout';
 import {FOOTER_QUERY, HEADER_QUERY} from '~/lib/fragments';
 

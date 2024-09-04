@@ -4,8 +4,8 @@
   --cart-aside-summary-height: 250px;
   --grid-item-width: 355px;
   --header-height: 64px;
-  --color-dark: #000;
-  --color-light: #fff;
+  --color-dark: #1b1b1b;
+  --color-light: #F4F4F4;
 }
 
 img {
@@ -27,6 +27,7 @@ aside {
   right: calc(-1 * var(--aside-width));
   top: 0;
   transition: transform 200ms ease-in-out;
+  z-index: 101;
 }
 
 aside header {
@@ -188,7 +189,7 @@ button.reset:hover:not(:has(> *)) {
   align-items: center;
   display: flex;
   grid-gap: 1rem;
-  margin-left: auto;
+  margin-left: 0;
 }
 
 /*

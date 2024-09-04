@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+.nav-bar {
+    height: 83px;
+    background-color: $lince-black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-bar .nav-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px 0px 15px;
+    nav a {
+        color: $lince-white;
+    }
+}
+
+.logo {
+    width: 150px;
+    cursor: pointer;
+
+}
+
+/* ----------- Phone Screens ----------- */
+@media (min-width: 300px) 
+  and (max-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .nav-bar .nav-bar-content {
+        width: 90%;
+        :nth-child(1) {
+            order: 2;
+        }
+        :nth-child(2) {
+            order: 1;
+        }
+        :nth-child(4) {
+            order: 3;
+        }
+    }
+}
+
+/* ----------- Ipad Screens ----------- */
+@media (min-width: 768px) 
+  and (max-width: 1199px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .nav-bar .nav-bar-content {
+        width: 90%;
+    }
+}
+
+/* ----------- Laptop Screens ----------- */
+@media (min-width: 1200px) 
+  and (max-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .nav-bar .nav-bar-content {
+        width: 80%;
+    }
+}
+
+/* ----------- Bigger Screens ----------- */
+@media (min-width: 1601px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .nav-bar .nav-bar-content {
+        width: 1200px;
+    }
+}

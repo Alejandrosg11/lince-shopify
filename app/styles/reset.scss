@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 body {
   font-family:
     system-ui,
@@ -53,11 +55,11 @@ p {
 }
 
 a {
-  color: #000;
   text-decoration: none;
 }
 
 a:hover {
+  color: $lince-green !important;
   text-decoration: underline;
   cursor: pointer;
 }
